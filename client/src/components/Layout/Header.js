@@ -40,7 +40,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-              <img src={Logo} height={{40px}} width={{40px}} color="white" />{" "}
+              <img src={Logo} height={{"40px"}} width={{"40px"}} color="white" />{" "}
               <span>Sakhi Trends</span>
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
