@@ -1,6 +1,5 @@
 .main11-subdiv2 {
     margin-top: -15%;
-    /* border: 1px solid black; */
     margin-left: 20%;
 }
 
@@ -16,4 +15,49 @@
 
 .main11-subdiv1 {
     margin-top: 5%;
+}
+
+/* ✅ Responsive styles for tablets and phones */
+@media (max-width: 768px) {
+    .main11 {
+        flex-direction: column;
+    }
+
+    .main11-subdiv1,
+    .main11-subdiv2 {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .main11-subdiv2 {
+        margin-top: 20px;
+    }
+
+    .main11-subdiv6 {
+        padding: 0;
+    }
+
+    .main11-subdiv7 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-img-top2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .main11-subdiv9 {
+        text-align: center;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .ant-select {
+        width: 100% !important;
+    }
 }
