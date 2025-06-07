@@ -43,7 +43,7 @@ const Login = () => {
         <div className="content-wrapper">
           <div className="Login">
             <form onSubmit={handleSubmit}>
-              <h4 className="Login-title">LOGIN FORM</h4>
+              <h4 className="Login-title">LOGINN FORM</h4>
 
               <div className="mb-3">
                 <input
