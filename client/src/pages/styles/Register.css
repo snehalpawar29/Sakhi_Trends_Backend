@@ -4,59 +4,37 @@
 }
 
 .bg {
-  background-color: rgb(237, 237, 255);
-  width: 100%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  height: 423vh;
+  width: 100vw;
+  background-color: rgb(237, 237, 255);
+  position: absolute;
+  z-index: 0;
 }
 
 .form-container {
   background-image: url("../../components/Assets/exclusive_image.jpeg");
   background-color: rgb(125, 226, 224);
-  width: 90%;
-  max-width: 500px;
-  /* keeps it wide on large screens */
-  height: auto;
-  /* let content define height */
-  color: white;
+  width: 500px;
+  height: 600px;
+  color: rgb(255, 255, 255);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 100px auto 0;
+  position: relative;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-shadow: 2px 5px 10px 10px rgb(193, 193, 193);
+  margin-top: 100px;
   border-radius: 4px;
+  z-index: -1;
 }
-
-.form-container>form {
-  backdrop-filter: blur(8px);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .form-container {
-    padding: 15px;
-  }
-
-  .form-container .title {
-    font-size: 2rem;
-  }
-
-  .form-container .mb-3 input {
-    font-size: 16px;
-  }
-}
-
-
-
 
 /*  */
 .form-container>form {
