@@ -4,41 +4,31 @@
 }
 
 .bg {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  /* full viewport height */
-  width: 100vw;
   background-color: rgb(237, 237, 255);
-  /* Remove position absolute and z-index */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /* ensure full height */
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .form-container {
   background-image: url("../../components/Assets/exclusive_image.jpeg");
   background-color: rgb(125, 226, 224);
-  width: 500px;
-  height: 600px;
-  color: rgb(255, 255, 255);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   width: 500px;
-  height: 700px;
-  margin: 0 auto;
+  min-height: 600px;
+  max-height: 90vh;
+  margin: 100px auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-shadow: 2px 5px 10px 10px rgb(193, 193, 193);
-  margin-top: 100px;
   border-radius: 4px;
-  z-index: -1;
 }
+
+
 
 /*  */
 .form-container>form {
