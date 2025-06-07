@@ -1,0 +1,36 @@
+.main12-subdiv4 {
+    margin-left: -6%;
+    width: 70%;
+}
+
+.main12-subdiv9 {
+    width: 451px;
+}
+
+.cart-heading {
+    margin-top: 15%;
+}
+
+.container {
+    margin-top: 5%;
+}
+
+.Total {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.cart-product-details {
+    margin-top: 8%;
+    font-size: 20px;
+}
+
+.cart-remove-btn {
+    margin-top: 35%;
+    margin-left: -35%;
+}
+
+.cart {
+    /* background-color: #ff0404; */
+    width: 700px;
+}

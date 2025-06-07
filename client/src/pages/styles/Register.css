@@ -1,0 +1,108 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.bg{
+   margin: 0;
+  padding: 0;
+  height: 423vh;
+  width: 100vw;
+  background-color: rgb(237, 237, 255);
+  position: absolute;
+  z-index: 0;
+}
+.form-container {
+  background-image: url("../../components/Assets/exclusive_image.jpeg");
+  background-color: rgb(125, 226, 224);
+  width: 500px;
+  height: 600px;
+  color: rgb(255, 255, 255);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 5px 10px 10px rgb(193, 193, 193);
+  margin-top: 100px;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+/*  */
+.form-container>form {
+  backdrop-filter: blur(8px);
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  z-index: 1;
+  height: 500px;
+  padding: 10px 10px 10px 10px;
+  margin: 50px 20px 70px 20px;
+}
+
+.form-container .title {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.form-container .mb-3 input {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+
+}
+
+.form-container .mb-3 input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+
+hr {
+  margin-top: -45px;
+  font-size: 140px;
+}
+
+.form-container .input-field input:focus {
+  border-color: #333333;
+}
+
+#exampleInputEmail1 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+#exampleInputPassword1 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.form-container>form>.register {
+  width: 100%;
+  padding:7px;
+  background-color: #007bff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container .btn-primary:hover {
+  background-color: #003d7d;
+  transition: 0.9s;
+}

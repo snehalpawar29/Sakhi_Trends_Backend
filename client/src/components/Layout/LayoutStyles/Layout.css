@@ -1,0 +1,55 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background-color: rgb(237, 237, 255);
+  margin-top: 70px;
+  /* Prevent content from hiding behind fixed navbar */
+}
+
+/* Layout Background */
+.bg {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  min-width: fit-content;
+  margin-left: -0.9%;
+}
+
+/* Responsive Layout */
+/* @media (max-width: 768px) {
+    main {
+      padding: 15px;
+    }
+  } */
+/* .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom 
+  }
+   */
+/* .content {
+    flex: 1; /* Pushes the footer to the bottom if content is short 
+    padding: 20px;
+  } */
+
+
+/* .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height 
+  } */
+
+/* .content {
+    flex: 1; /* Pushes footer down 
+    padding: 20px;
+  } */

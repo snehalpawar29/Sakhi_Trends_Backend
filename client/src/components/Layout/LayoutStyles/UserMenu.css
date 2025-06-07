@@ -1,0 +1,42 @@
+/* .Dashboard{
+    width: 300px;
+    font-size: 90px;
+    text-align: center;
+    margin: -5% 70% 0% 170%;
+} */
+
+/* .horizon{
+    position: relative;
+    border: 3px solid black;
+    width: 380px;
+    margin: 0% 70% 0% 370%;
+} */
+
+.PO {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 130px; */
+    height: 260px;
+    /* margin-left: -13px; */
+    /* border-radius: 0px; */
+    width: 170px;
+    /* box-shadow: 2px 10px 18px 10px rgb(125, 125, 125); */
+}
+
+.Profile,
+.Orders {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    padding-top: 10px;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    background-color: rgb(101, 101, 101);
+    margin: 0px 12px 0px 0px;
+}
+
+.Profile {
+    margin-bottom: 20px;
+}
