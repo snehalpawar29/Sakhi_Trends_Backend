@@ -5,8 +5,8 @@ import toast from "react-hot-toast";
 import { useCart } from "../../context/cart";
 import SearchInput from "../Form/SearchInput";
 import useCategory from "../../hooks/useCategory";
-import { FaBicycle } from "react-icons/fa6";
 import "../Layout/LayoutStyles/Header.css";
+import Logo from "../Assets/Logo.jpeg";
 
 const Header = () => {
   const [auth, setAuth] = useAuth();
@@ -40,7 +40,8 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-              <FaBicycle size={40} color="white" /> <span>Spinning Wheels</span>
+              <img src={Logo} size={40} color="white" />{" "}
+              <span>Sakhi Trends</span>
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />

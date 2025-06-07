@@ -240,13 +240,13 @@ const HomePage = () => {
 
   return (
     <Layout title={"All Products - Best offers"}>
-      {/* banner image */}
+      {/* banner image
       <img
         src="/images/banner.png"
         className="banner-img"
         alt="banner"
         width={"100%"}
-      />
+      /> */}
       {/* main content */}
       <div className="container-fluid home-page-row mt-3 home-page">
         <div className="col-md-3 filters">
