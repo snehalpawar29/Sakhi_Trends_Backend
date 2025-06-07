@@ -3,16 +3,15 @@ import Header from "./Header.js";
 import Footer from "./Footer.js";
 import "../Layout/LayoutStyles/Layout.css";
 import { Toaster } from "react-hot-toast";
-
 export const Layout = ({ children }) => {
   return (
-    <div className="layout-container">
+    <div className="bg">
       <Header />
-      <main className="content">
+      <main>
         <Toaster />
         {children}
       </main>
-      <Footer />
+      <Footer />l
     </div>
   );
 };

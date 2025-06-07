@@ -40,42 +40,40 @@ const Login = () => {
   return (
     <Layout>
       <div className="bg">
-        <div className="content-wrapper">
-          <div className="Login">
-            <form onSubmit={handleSubmit}>
-              <h4 className="Login-title">LOGINN FORM</h4>
+        <div className="Login">
+          <form onSubmit={handleSubmit}>
+            <h4 className="Login-title">LOGIN FORM</h4>
 
-              <div className="mb-3">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="form-control"
-                  id="exampleInputEmail1"
-                  placeholder="Enter Your Email "
-                  style={{ color: "white" }}
-                  required
-                />
-              </div>
-              <hr />
-              <div className="mb-3">
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Enter Your Password"
-                  style={{ color: "white" }}
-                  required
-                />
-              </div>
-              <hr />
-              <button type="submit" className="Login-button">
-                Login
-              </button>
-            </form>
-          </div>
+            <div className="mb-3">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="form-control"
+                id="exampleInputEmail1"
+                placeholder="Enter Your Email "
+                style={{ color: "white" }}
+                required
+              />
+            </div>
+            <hr />
+            <div className="mb-3">
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="form-control"
+                id="exampleInputPassword1"
+                placeholder="Enter Your Password"
+                style={{ color: "white" }}
+                required
+              />
+            </div>
+            <hr />
+            <button type="submit" className="Login-button">
+              Login
+            </button>
+          </form>
         </div>
       </div>
     </Layout>

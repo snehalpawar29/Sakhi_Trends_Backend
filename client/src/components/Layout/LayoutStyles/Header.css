@@ -1,80 +1,69 @@
-* {
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ * {
+   font-family: 'Times New Roman', Times, serif;
+   margin: 0;
+   padding: 0;
+ }
 
-.navbar {
-  box-shadow: 5px 5px 15px 1px rgba(67, 208, 255, 0.5);
-  height: 70px;
-  background-color: rgb(95, 172, 171);
-}
+ .navbar {
+   box-shadow: 5px 5px 15px 1px rgba(67, 208, 255, 0.5);
+   height: 70px;
+ }
 
-.container-fluid1 {
-  padding: 0 20px;
-  font-size: 20px;
-}
+ /* Navbar Container */
+ .container-fluid1 {
+   background-color: rgb(95, 172, 171);
+   padding: 15px 20px;
+   text-align: center;
+   font-size: 20px;
+ }
 
-/* Navbar brand align icon and text */
-.navbar-brand {
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+ /* Navbar Links */
+ #navbarTogglerDemo01 .nav-item .nav-link {
+   color: white;
+   position: relative;
+   transition: 0.3s;
+ }
 
-/* Navbar Links */
-#navbarTogglerDemo01 .nav-link {
-  color: white;
-  position: relative;
-  transition: color 0.3s ease;
-  font-size: 18px;
-}
+ #navbarTogglerDemo01 .nav-item .nav-link:hover {
+   color: rgb(255, 218, 185);
+ }
 
-#navbarTogglerDemo01 .nav-link:hover,
-#navbarTogglerDemo01 .nav-link.active {
-  color: rgb(255, 218, 185);
-}
+ /* Cart Badge */
+ .nav-item .nav-link .cart {
+   background-color: red;
+   /* position: absolute; */
+   /* top: 5px; */
+   /* left: 35px; */
+   font-size: 13px;
+   color: black;
+   padding: 2px 6px;
+   border-radius: 50%;
+   font-weight: bold;
+   /* size: 12px; */
+ }
 
-/* Cart badge */
-.cart {
-  background-color: red;
-  position: absolute;
-  top: 4px;
-  right: -10px;
-  font-size: 13px;
-  color: black;
-  padding: 2px 6px;
-  border-radius: 50%;
-  font-weight: bold;
-}
+ /* Dropdown Menu */
+ .dropdown .dropdown-menu {
+   background-color: white;
+   box-shadow: 5px 5px 15px 1px rgba(19, 19, 19, 0.5);
+   border-radius: 7px;
+   padding: 5px;
+   font-size: 18px;
+ }
 
-/* Dropdown menu */
-.dropdown-menu {
-  background-color: white;
-  box-shadow: 5px 5px 15px 1px rgba(19, 19, 19, 0.5);
-  border-radius: 7px;
-  padding: 5px 0;
-  font-size: 18px;
-}
+ /* Responsive Navbar */
+ @media (max-width: 768px) {
+   .navbar {
+     height: auto;
+   }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    height: auto;
-  }
+   .container-fluid1 {
+     font-size: 18px;
+     padding: 10px;
+   }
 
-  .container-fluid1 {
-    font-size: 18px;
-    padding: 10px 15px;
-  }
-
-  .cart {
-    font-size: 12px;
-    right: -8px;
-    top: 2px;
-  }
-}
+   .cart {
+     left: 30px;
+     font-size: 12px;
+   }
+ }
