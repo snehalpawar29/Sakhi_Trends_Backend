@@ -5,13 +5,24 @@
 .bg {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  /* Changed from 0vh */
+  min-height: 100vh;
+  /* fill at least viewport height */
   width: 100vw;
   background-color: rgb(237, 237, 255);
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+  align-items: center;
+  /* center vertically */
+  flex-direction: column;
+  position: relative;
+  /* remove absolute */
   z-index: 0;
 }
+
+
+
+
 
 
 .Login {
@@ -38,19 +49,43 @@
   z-index: 1;
 }
 
-/*  */
 .Login>form {
-  backdrop-filter: blur(8px);
-  display: flex;
-  /* border: 1px solid black; */
-  flex-direction: column;
-  gap: 20px;
-  position: absolute;
+  /* Remove position: absolute and z-index */
+  position: relative;
+  /* or simply remove position */
   z-index: 1;
-  height: 500px;
+  /* if you want */
+  /* Remove fixed height if possible, or make it auto */
+  height: auto;
   width: 400px;
   padding: 100px 10px 10px 10px;
   margin: 70px 20px 70px 20px;
+  /* Keep flexbox styles */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container>form {
+  position: relative;
+  /* or remove absolute */
+  z-index: 1;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  margin: 50px 20px 70px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+  align-items: center;
+  /* center vertically */
+  padding: 20px;
 }
 
 .Login .Login-title {

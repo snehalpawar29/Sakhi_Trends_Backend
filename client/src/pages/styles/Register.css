@@ -1,17 +1,22 @@
 * {
   font-family: 'Times New Roman', Times, serif;
-  
+
 }
 
-.bg{
-   margin: 0;
+.bg {
+  margin: 0;
   padding: 0;
-  height: 423vh;
+  height: 100vh;
+  /* full viewport height */
   width: 100vw;
   background-color: rgb(237, 237, 255);
-  position: absolute;
-  z-index: 0;
+  /* Remove position absolute and z-index */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* ensure full height */
 }
+
 .form-container {
   background-image: url("../../components/Assets/exclusive_image.jpeg");
   background-color: rgb(125, 226, 224);
@@ -93,7 +98,7 @@ hr {
 
 .form-container>form>.register {
   width: 100%;
-  padding:7px;
+  padding: 7px;
   background-color: #007bff;
   color: #000000;
   border: none;
