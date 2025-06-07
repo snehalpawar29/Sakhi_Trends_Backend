@@ -1,52 +1,59 @@
-.details {
-    margin-left: 10%;
-    border: 7px solid rgb(90, 89, 89);
-    height: 300px;
-    width: 600px;
-    margin-top: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 10px 0px rgb(125, 125, 125);
-    /* background-color: #ca2d2d; */
-
-}
-
-.details .h31 {
-    font-weight: bold;
-    width: 310px;
-    margin-left: -120px;
-}
-
-.details .h32 {
-    width: 520px;
-    font-weight: bold;
-}
-
-.details .h33 {
-    font-weight: bold;
-    margin-left: -60px;
-    width: 360px;
-}
-
 .main1-subdiv {
     display: flex;
+    min-height: 80vh;
+    gap: 2rem;
+    padding: 2rem 1rem;
 }
 
-
+/* UserMenu container */
 .um1 {
-    margin-left: -1%;
-    width: 10vw;
-    /* border: 5px solid black; */
-    /* border: 5px solid rgb(255, 0, 0); */
-    margin-top: 9.5%;
-    /* width: 30vw; */
+    margin-top: 3rem;
+    width: 100%;
 }
 
+/* Dashboard title */
 .Dashboard1 {
-    width: 100vw;
-    font-size: 90px;
+    font-size: 3rem;
     text-align: center;
-    margin-top: 12%;
-    /* border: 5px solid black; */
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Details card styling */
+.details {
+    border: 3px solid rgb(90, 89, 89);
+    padding: 2rem 3rem;
+    height: auto;
+    min-height: 300px;
+    box-shadow: 0 0 10px rgb(125, 125, 125);
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.details h3 {
+    font-weight: 600;
+    color: #444;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main1-subdiv {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .Dashboard1 {
+        font-size: 2rem;
+    }
+
+    .details {
+        width: 100%;
+        padding: 1.5rem;
+    }
 }

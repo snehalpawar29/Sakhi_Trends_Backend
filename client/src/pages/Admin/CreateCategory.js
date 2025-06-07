@@ -266,7 +266,7 @@ const CreateCategory = () => {
                 setUpdatedImage(null);
               }}
               footer={null}
-              visible={visible}
+              open={visible}
             >
               <CategoryForm
                 value={updatedName}

@@ -26,3 +26,14 @@
 .am {
     margin-top: 5%;
 }
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1rem;
+}

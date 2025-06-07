@@ -40,7 +40,7 @@ const Products = () => {
         </div>
         <div className="col-md-9 main9-subdiv3">
           <h1 className="text-center">All Products List</h1>
-          <div className="d-flex flex-wrap">
+          <div className="product-container">
             {products?.map((p) => (
               <Link
                 key={p._id}

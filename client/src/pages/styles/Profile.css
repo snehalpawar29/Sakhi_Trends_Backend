@@ -1,9 +1,6 @@
 .main5 {
-    /* border: 5px solid black; */
-    margin: -15% 0% 0% 15%;
-    padding: 0%;
-    /* height: 10px;
-    wid */
+    margin-top: 2rem;
+    padding: 0 1rem;
 }
 
 .main5 .main5-subdiv #exampleInputEmail1 {
@@ -11,20 +8,14 @@
 }
 
 .Dashboard3 {
-    width: 100vw;
-    font-size: 90px;
+    font-size: 2.5rem;
     text-align: center;
-    margin-top: 10%;
-    /* border: 5px solid black; */
+    margin-bottom: 2rem;
 }
 
 .um {
-    margin-left: -8%;
-    width: 10vw;
-    /* border: 5px solid black; */
-    /* border: 5px solid rgb(255, 0, 0); */
-    margin-top: 11%;
-    width: 30vw;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 /* .main4 {
@@ -32,3 +23,23 @@
     border: 5px solid black;
     padding-left: -20%;
 } */
+/* Style inputs */
+.form-control {
+    font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .Dashboard3 {
+        font-size: 2rem;
+    }
+
+    .main5 {
+        margin-top: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .um {
+        margin-top: 0;
+    }
+}

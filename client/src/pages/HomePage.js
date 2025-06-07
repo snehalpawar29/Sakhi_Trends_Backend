@@ -248,7 +248,7 @@ const HomePage = () => {
         width={"100%"}
       />
       {/* main content */}
-      <div className="container-fluid row mt-3 home-page">
+      <div className="container-fluid home-page-row mt-3 home-page">
         <div className="col-md-3 filters">
           <h4 className="text-center">Filter By Category</h4>
           <div className="d-flex flex-column">

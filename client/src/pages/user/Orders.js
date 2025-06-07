@@ -65,7 +65,13 @@ const Orders = () => {
                   <tbody>
                     <tr>
                       <td>{i + 1}</td>
-                      <td>{o?.status}</td>{" "}
+                      <td>
+                        <span
+                          className={`status-badge status-${o.status.toLowerCase()}`}
+                        >
+                          {o.status}
+                        </span>
+                      </td>{" "}
                       {/* Status should update automatically */}
                       <td>{o?.buyer?.name}</td>
                       <td>{moment(o?.createdAt).fromNow()}</td>

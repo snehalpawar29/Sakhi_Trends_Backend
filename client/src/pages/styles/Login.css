@@ -5,12 +5,14 @@
 .bg {
   margin: 0;
   padding: 0;
-  height: 0vh;
+  height: 100vh;
+  /* Changed from 0vh */
   width: 100vw;
   background-color: rgb(237, 237, 255);
   position: absolute;
   z-index: 0;
 }
+
 
 .Login {
   background-image: url("../../components/Assets/exclusive_image.jpeg");
@@ -33,7 +35,7 @@
   box-shadow: 2px 5px 10px 10px rgb(193, 193, 193);
   margin-top: 100px;
   border-radius: 4px;
-  z-index: -1;
+  z-index: 1;
 }
 
 /*  */
@@ -75,9 +77,11 @@
 
 
 hr {
-  margin-top: -45px;
-  font-size: 140px;
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 
 .Login .input-field input:focus {
   border-color: #333;

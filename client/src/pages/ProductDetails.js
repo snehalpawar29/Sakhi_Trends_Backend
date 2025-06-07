@@ -113,6 +113,21 @@ const ProductDetails = () => {
             <strong>Subcategory: </strong>
             {product?.subcategory?.name}
           </h4>
+          <button
+            className="btn btn-primary mt-3"
+            onClick={() => {
+              if (!auth?.token) {
+                navigate("/login");
+                toast.error("You must be logged in to add items to the cart");
+                return;
+              }
+              setCart([...cart, product]);
+              localStorage.setItem("cart", JSON.stringify([...cart, product]));
+              toast.success("Item Added To Cart");
+            }}
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
 
