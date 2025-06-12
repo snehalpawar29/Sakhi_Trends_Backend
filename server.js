@@ -34,6 +34,14 @@ app.use("/api/v1/subcategory", subcategoryRoutes);
 //   res.sendFile(path.resolve(_dirname, "client", "build", "index.html"));
 // });
 //rest api
+
+app.use(
+  cors({
+    origin: "https://sakhitrends.netlify.app",
+    credentials: true,
+  })
+);
+
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to ecommmerce App</h1>");
 });
